@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+  import { SpeedInsights } from "@vercel/speed-insights/next"
   <meta charset="UTF-8">
   <title>Currículo de Laura</title>
   <style>
@@ -187,7 +188,8 @@
       section.style.display = section.style.display === "block" ? "none" : "block";
     }
   </script>
-
+        {children}
+        <SpeedInsights />
 </body>
 </html>
 
