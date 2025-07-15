@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Currículo de Laura</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #c2aeaf;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background-color: #c0aeb1;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(5, 5, 5, 0.1);
+    }
+
+    .profile {
+      text-align: center;
+    }
+
+    .profile img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #000000;
+    }
+
+    h1, h2, h3 {
+      margin-bottom: 10px;
+    }
+
+    .info {
+      text-align: center;
+      margin-bottom: 5px;
+    }
+
+    .info a {
+      color: #000000;
+      text-decoration: none;
+    }
+
+    .info a:hover {
+      text-decoration: underline;
+    }
+
+    button {
+      padding: 10px 16px;
+      background-color: #a18b95;
+      color: rgb(17, 15, 15);
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 15px;
+      display: block;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #9e7d8a;
+    }
+
+    .section {
+      margin-top: 15px;
+      background: #b89da8;
+      padding: 15px;
+      border-radius: 8px;
+      display: none;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li {
+      background-color: #a58694;
+      padding: 8px;
+      margin-bottom: 6px;
+      border-radius: 5px;
+      color: #070707;
+    }
+
+    .portfolio-item {
+      margin-top: 10px;
+      border: 1px solid #c7b2b2;
+      border-radius: 8px;
+      padding: 10px;
+      background-color: #ffffff;
+    }
+
+    .portfolio-item img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-top: 8px;
+    }
+
+    .section-title {
+      margin-top: 30px;
+      margin-bottom: 10px;
+      font-size: 20px;
+      color: #a19c9c;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="profile">
+      <img src="/Trabalho.html/trabalholaura.jpg" alt="Foto de Laura">
+      <h1>Olá, meu nome é Laura</h1>
+    </div>
+    <div class="info">💻 Técnica em TI </div>
+    <div class="info">📍 Porto Alegre - RS</div>
+    <div class="info">📞 51 993478501</div>
+    <div class="info">✉️ <a href="mailto:laurapassuello25@gmail.com.br">laurapassuello25@gmail.com.br</a></div>
+    <div class="info">💻 <a href="https://github.com/laurapassuello25" target="_blank">github.com/laurapassuello25</a></div>
+
+    <!-- Botão e Seção: Ferramentas + Habilidades Pessoais -->
+<button onclick="toggleSection('Ferramentas')">Habilidades</button>
+<div id="Ferramentas" class="section">
+  <h4>Ferramentas</h4>
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>Java</li>
+    <li>GitHub</li>
+    <li>Banco de Dados</li>
+    <li>Canva</li>
+  </ul>
+
+  <h4>Habilidades Pessoais</h4>
+  <ul>
+    <li>Organização</li>
+    <li>Responsabilidade</li>
+    <li>Empatia</li>
+    <li>Comprometimento</li>
+    <li>Escuta Ativa</li>
+  </ul>
+</div>
+
+
+
+    <button onclick="toggleSection('sobre')">Sobre Mim</button>
+    <div id="sobre" class="section">
+      <p>Meu nome é Laura Sílva Passuello,tenho 17 anos, estou atualmente no 2º ano do Ensino Médio e cursando Curso écnico em Tecnologia da Informação (TI). Sou uma pessoa mais reservada, gosto de aprender no meu ritmo e me dedico com responsabilidade às atividades que assumo. Tenho interesse na área de desenvolvimento e estou em busca de oportunidades para crescer profissionalmente e aplicar os conhecimentos adquiridos no curso.</p>
+    </div>
+
+    <button onclick="toggleSection('idiomas')">Idiomas</button>
+    <div id="idiomas" class="section">
+      <ul>
+        <li>Português - Nativo</li>
+        <li>Inglês - Intermediário</li>
+      </ul>
+    </div>
+
+    <button onclick="toggleSection('portfolio')">Portfólio</button>
+    <div id="portfolio" class="section">
+      <div class="portfolio-item">
+        <strong></strong>
+        <p></p>
+        <img src="/Trabalho.html/fotomodafashion.png" alt="Site de Roupas de Modas,contendo blusas de manga curta,blusa de manga longa.calças e jaquetas.">
+        <p>Site de Roupas de Modas,Blusas de Manga Curta,Blusas de Manga Longa,Calças e Casacos.</p>
+        <a href="http://127.0.0.1:5500/Atividade%20Bootstrap/boostrap.html" target="_blank">Clique aqui</a>
+      </div>
+      <div class="portfolio-item">
+        <strong></strong>
+        <p></p>
+        <img src="/Trabalho.html/fotoestudio.png" alt="">
+        <p>Estudio de fotos,com Portfolio de Fotos,Comentários e Contato.</p>
+        <a href="http://127.0.0.1:5500/Trabalho.html/estudio.html" target="_blank">Clique aqui.</a>
+
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleSection(id) {
+      const section = document.getElementById(id);
+      section.style.display = section.style.display === "block" ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>
+
